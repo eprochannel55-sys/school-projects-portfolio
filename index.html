@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Projects Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>School Projects Portfolio</h1>
+    </header>
+    <main>
+        <section id="project-form-section">
+            <h2>Submit Your Project</h2>
+            <form id="project-form">
+                <label for="project-title">Project Title:</label>
+                <input type="text" id="project-title" name="project-title" required><br>
+
+                <label for="project-description">Project Description:</label>
+                <textarea id="project-description" name="project-description" required></textarea><br>
+
+                <label for="project-link">Project Link:</label>
+                <input type="url" id="project-link" name="project-link" required><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="project-display-section">
+            <h2>Submitted Projects</h2>
+            <div id="project-list">
+                <!-- Projects will appear here dynamically -->
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
